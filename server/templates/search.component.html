@@ -1,0 +1,12 @@
+
+
+<div *ngIf="auth.authenticated()">
+  <h3> We have found 10 jobs near you</h3>
+<input type="text"  (input)=0 #q />
+
+
+<div *ngFor="let post of posts">
+  <app-jobpost [data]="post"></app-jobpost>
+</div>
+</div>
+ <!-- |// search:q.value -->

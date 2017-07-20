@@ -1,0 +1,10 @@
+
+<!--<p>
+  {{data.title}}
+</p>-->
+
+<div>
+ <a [routerLink]="['apply/:id']"*ngIf="auth.authenticated()" > {{data.description}} , {{data.category}}</a>
+</div>
+
+  
